@@ -4,5 +4,6 @@
     "aws": "Y",
     "s3": "Y",
     "data_base": "Y",
-    "excel": "Y"
+    "excel": "Y",
+    "concurrency": "Y"
 }

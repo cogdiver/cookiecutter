@@ -9,15 +9,21 @@ python-dotenv = "*"
 colorama = "*"
 pyyaml = "*"
 pathlib = "*"
-tqdm = "*"
 {% if cookiecutter.excel.lower()=='y' -%}
 openpyxl = "*"
 xlrd = "*"
 {% endif -%}
 {% if cookiecutter.aws.lower()=='y' -%}
 boto3 = "*"
-aioaws = "*"
 httpx = "*"
+{% endif -%}
+{% if cookiecutter.concurrency.lower()=='y' -%}
+{% if cookiecutter.aws.lower()=='y' -%}
+aioaws = "*"
+{% endif -%}
+asyncio = "*"
+asyncpg = "*"
+tqdm = "*"
 {% endif %}
 
 [dev-packages]
