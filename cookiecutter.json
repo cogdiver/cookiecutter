@@ -1,0 +1,8 @@
+{
+    "project_name": "data_upload_2",
+    "python_version": "3.8",
+    "aws": "Y",
+    "s3": "Y",
+    "data_base": "Y",
+    "excel": "Y"
+}

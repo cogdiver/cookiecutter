@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+click = "*"
+python-dotenv = "*"
+colorama = "*"
+pyyaml = "*"
+pathlib = "*"
+tqdm = "*"
+{% if cookiecutter.excel.lower()=='y' -%}
+openpyxl = "*"
+xlrd = "*"
+{% endif -%}
+{% if cookiecutter.aws.lower()=='y' -%}
+boto3 = "*"
+aioaws = "*"
+httpx = "*"
+{% endif %}
+
+[dev-packages]
+
+[requires]
+python_version = {{ cookiecutter.python_version }}
